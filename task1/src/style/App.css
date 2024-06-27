@@ -1,0 +1,141 @@
+/* 
+
+text : #411020
+bac; of text : #f6d5da
+border left : #c13d60
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #882947;
+}
+
+/* Header */
+
+.header {
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  background-color: #c13d60;
+  grid-column: 1/3;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.nav-list-link {
+  background-color: #d75c77;
+  padding: 2.5rem 2.5rem;
+  border-radius: 11px;
+  transition: all 1s;
+}
+
+.nav-list-link:hover {
+  background-color: #c13d60;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+}
+
+/* sidebar */
+.sidebar {
+  max-width: 22rem;
+  background-color: #c13d60;
+  padding: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+.sidebar div {
+  background-color: #d75c77;
+  padding: 2.5rem 2.5rem;
+  border-radius: 11px;
+  transition: all 1s;
+}
+
+.sidebar div:hover {
+  background-color: #c13d60;
+  cursor: pointer;
+  color: #ddd;
+}
+
+/* ABOUT */
+.text {
+  margin: 10rem 0;
+  padding: 1.5rem 3rem;
+  line-height: 1;
+  font-size: 5rem;
+  text-align: center;
+  background-color: #f6d5da;
+  color: #411020;
+}
+
+/* Footer */
+.footer {
+  border-top: 5px solid #752642;
+  border-bottom: 1px solid #752642;
+  padding: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #f6d5da;
+  color: #752642;
+  text-transform: uppercase;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img-wrapper {
+  margin-left: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #f6d5da;
+  max-width: 30rem;
+  height: 20rem;
+  display: flex;
+  border-radius: 11px;
+  gap: 1rem;
+}
+
+img {
+  width: 50%;
+  justify-self: self-start;
+  border-radius: 11px;
+}
+
+.img-wrapper p {
+  font-size: 1.4rem;
+  align-self: center;
+  letter-spacing: 0.5px;
+  color: #411020;
+}
+
+/* LOADING */
+.loading {
+  font-size: 10rem;
+  text-align: center;
+  color: #ddd;
+}
